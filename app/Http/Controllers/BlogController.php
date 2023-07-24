@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Classes\BlogDados;
+use App\Http\Controllers\Classes\DashboardDados;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Inertia\Inertia;
@@ -26,6 +27,7 @@ class BlogController extends Controller
         return Inertia::render('Blog/PostPage', [
             'page' => $this->blogDados->getDadosPost($id),
             'data' => DB::table('blog')->where('url_arquivo', $id)->first(),
+            'header' => DashboardDados::getAllHeaderData(),
         ]);
     }
 
