@@ -48,7 +48,7 @@ Route::post('sendEmail', function () {
         'mensagem' => 'required'
     ]);
 
-    Mail::to('thiago.crepequer@hotmail.com')->send(new EmailContato($data));
+    Mail::to(env('MAIL_TO_ADDRESS'))->send(new EmailContato($data));
 
     return response()->json(['success' => true]);
 })->name('email.send');
