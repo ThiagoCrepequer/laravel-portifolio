@@ -24,7 +24,7 @@ export function UmPoucoSobreMim() {
                 </div>
                 <div className='flex-1 flex justify-center'>
                     <div className='border-2 border-rose-600'>
-                        <img className=" sm:min-w-[350px] max-w-[700px]" src={dados.url_imagem} />
+                        <img className=" sm:min-w-[350px] max-w-[400px]" src={dados.url_imagem} />
                     </div>
                 </div>
             </div>

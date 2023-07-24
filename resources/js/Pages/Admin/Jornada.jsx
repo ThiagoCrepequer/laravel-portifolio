@@ -36,11 +36,13 @@ export default function Jornada({ auth }) {
 }
 
 function FormJornada({ dado }) {
-    const { FormAdmin, AdminTextInput, AdminTextarea, AdminDateInput } = FormAdminFactory(dado, 'sobremim_jornada');
+    const { FormAdmin, AdminTextInput, AdminTextarea, AdminDateInput, DeleteButton } = FormAdminFactory(dado, 'sobremim_jornada');
 
     return (
         <FormAdmin className="relative w-[300px] md:w-[500px] m-2 justify-center rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
             <div className="flex flex-col">
+                <DeleteButton />
+                
                 <AdminDateInput value={"date"}>
                     Data
                 </AdminDateInput>

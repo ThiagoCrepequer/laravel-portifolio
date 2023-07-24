@@ -107,7 +107,7 @@ function CardPostBlog({ dados }) {
                 <h1 className="text-md sm:text-xl font-extrabold">{dados.title}</h1>
                 <p className="text-center mt-4 mb-2 text-sm sm:text-base">{dados.description}</p>
                 <div className="flex flex-wrap text-neutral-700 justify-center items-center text-[12px] sm:text-base">
-                    <span className="mr-1 sm:mr-6">Por: Pedro Santana</span>
+                    <span className="mr-1 sm:mr-6">Por: Thiago Crepequer</span>
                     <div>
                         <span>Views: {dados.views}</span>
                         <div className="inline mx-0.5 sm:mx-2 w-0.5 h-3 sm:h-5 border-neutral-700 border-l" />

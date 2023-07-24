@@ -35,7 +35,7 @@ export function Inicial() {
 
                     
                 <TitleWithMotion className='text-2xl sm:text-4xl text-rose-600'>
-                    Scrum Master
+                    Full-Stack
                 </TitleWithMotion>
             </div>
         </section>
