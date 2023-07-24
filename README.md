@@ -24,3 +24,7 @@ Neste projeto, desenvolvi um portfólio pessoal acompanhado por um blog integrad
  - Migre as tabelas para o banco `php artisan migrate`
  - Instale as dependencias do React `npm install`
  - Execute o Vite e o Laravel `php artisan serve` e `npm run dev`
+# Liçenca
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+<p align="center" style="text-align:center;">Made by: Thiago Crepequer</p>
