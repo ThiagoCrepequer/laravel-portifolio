@@ -1,7 +1,9 @@
 import { Header } from "@/Components/Header";
+import { usePage } from "@inertiajs/react";
 import { motion } from "framer-motion"
 
 export function Inicial() {
+    const { header } = usePage().props
     
     function TitleWithMotion({children, className = ''}) {
         return (
@@ -28,7 +30,7 @@ export function Inicial() {
                 className='bg-cover bg-center w-full h-full shadow-inner shadow-neutral-900 text-center flex justify-center items-center flex-col font-extrabold'
             >
                 <TitleWithMotion className="text-5xl sm:text-6xl">
-                    Pedro Santana
+                    {header.title}
                 </TitleWithMotion>
 
                     

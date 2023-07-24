@@ -1,4 +1,8 @@
+import { usePage } from "@inertiajs/react"
+
 export function Footer() {
+    const { header } = usePage().props
+
     return (
         <footer
             className="bg-neutral-900 text-center lg:text-left"
@@ -9,7 +13,7 @@ export function Footer() {
                 <a
                     className=""
                     href=""
-                > Pedro Santana</a
+                >{header.title}</a
                 >
             </div>
         </footer>
