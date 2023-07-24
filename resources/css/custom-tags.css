@@ -1,0 +1,29 @@
+@layer customTags {
+    .line-before-left {
+        position: relative;
+    }
+
+    .line-before-left::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70px;
+        height: 4px;
+        background-color: rgba(225, 29, 72, 1);
+    }
+
+    .line-before-right {
+        position: relative;
+    }
+
+    .line-before-right::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70px;
+        height: 4px;
+        background-color: rgba(225, 29, 72, 1);
+    }
+}

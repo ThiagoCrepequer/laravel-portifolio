@@ -1,0 +1,10 @@
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    transition: all 0.5s ease-in;
+    background: rgb(225, 29, 72);
+    transform-origin: 0%;
+  }
